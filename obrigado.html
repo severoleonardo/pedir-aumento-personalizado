@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrigado, chefe!</title>
+    <title>Obrigado, gestor!</title>
 </head>
 <body>
     <div class="container">
 
-        <h1 style="color: rgb(255, 190, 26); font-size: 36px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 0.5px; font-weight: 400; text-shadow: 0 0 8px black;">OBRIGADO, CHEFE</h1>
+        <h1 style="color: rgb(255, 190, 26); font-size: 36px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 0.5px; font-weight: 400; text-shadow: 0 0 8px black;">OBRIGADO, GESTOR</h1>
         <h2 style="color: white; font-size: 30px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 0.5px; font-weight: 400; text-shadow: 0 0 6px black; margin-bottom: 20px;">Atributos melhorados:</h2>
 
         <div class="att1">
@@ -17,7 +17,7 @@
         </div>
 
         <div class="att2">
-            <p class="atributo2">Gratidão ao chefe:</p>
+            <p class="atributo2">Gratidão ao gestor:</p>
             <p class="up2" style="color: rgb(5, 180, 5);">+23%</p>
         </div>
 
@@ -31,7 +31,10 @@
             <p class="up4" style="color: red">-17%</p>
         </div>
 
-        <button>DAR AUMENTO EXTRA</button>
+        <a href="mailto:rh@jazztech.com.br?cc=glauco.lemes@jazztech.com.br?cc=julio.castilho@jazztech.com.br&subject=Aumento%20de%20Salário%20do%20colaborador%20Leonardo%20Severo%20Elias&body=">
+            <button>✉️ COMUNICAR O RH </button>
+        </a>
+        
     </div>
 
     <!-- Usei a imagem como background ao invés de pôr direto no css, mas não lembro o porquê... -->
@@ -115,13 +118,19 @@
     }
 
     button {
+        align-items: center;
+        justify-content: center;
+        width: 400px;
         height: 40px;
         background-color: rgb(255, 190, 26);
+        box-shadow: 0 0 20px rgb(255, 190, 26);
         margin-top: 30px;
         font-size: 18px;
         font-weight: 800;
         opacity: 0;
         transition: 2s;
+        cursor: pointer;
+        border: none;
     }
     button:hover {
         transform: scale(1.05);
